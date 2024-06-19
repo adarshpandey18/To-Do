@@ -1,16 +1,59 @@
-# to_do
+# To-Do List App
 
-A new Flutter project.
+This is a simple to-do list application built with Flutter. It allows users to add, mark as complete, and remove tasks. The app uses the Provider package for state management and supports a dark theme.
+
+## Features
+
+- Add new tasks
+- Mark tasks as completed
+- Remove tasks
+- Dark theme support
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter installed on your machine
+- A code editor such as VSCode or Android Studio
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Installing
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository:
+
+```bash
+  git clone https://github.com/yourusername/todo_list_app.git
+  cd todo_list_app
+```
+2. Install dependencies:
+  ```bash
+  flutter pub get
+  ```
+3. Run the application:
+  ```bash
+  flutter run
+  ```
+## Project Structure
+```bash
+lib/
+├── main.dart
+├── models/
+│   ├── Task.dart
+│   └── ToDoList.dart
+├── pages/
+│   ├── add_task.dart
+│   └── home_pages.dart
+└── widgets/
+    └── task_tile.dart
+```
+- main.dart: Sets up the ChangeNotifierProvider for ToDoList and configures routes.
+- models/Task.dart: Defines the Task model.
+- models/ToDoList.dart: Manages the list of tasks and notifies listeners.
+- pages/add_task.dart: Page for adding a new task.
+- pages/home_pages.dart: Home page displaying the list of tasks.
+- widgets/task_tile.dart: Custom widget for displaying individual tasks.
+
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+## Acknowledgments
+Inspired by various Flutter tutorials and documentation.
+
